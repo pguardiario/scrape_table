@@ -1,5 +1,10 @@
 from selenium import webdriver
-import json
+import json, os, sys
+
+if os.system('pwd') == '/home/runner':
+  os.system("sudo apt-get install google-chrome")
+  os.system("chmod +x chromedriver")
+  sys.path.append("/home/runner")
 
 driver = webdriver.Chrome()
 
