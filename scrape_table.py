@@ -3,9 +3,8 @@ import json, os, sys
 
 if os.popen('pwd').read().strip() == '/home/runner':
   os.system("chmod +x /home/runner/phantomjs")
-  sys.path.append("/home/runner")
 
-driver = webdriver.PhantomJS()
+driver = webdriver.PhantomJS(executable_path='/home/runner/phantomjs')
 
 driver.get("https://www.coinbase.com/price")
 
