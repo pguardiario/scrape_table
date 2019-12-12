@@ -1,4 +1,4 @@
-[![Run on Repl.it](https://repl.it/badge/github/itsapi/pycraft)](https://repl.it/github/itsapi/pycraft)
+[![Run on Repl.it](https://repl.it/badge/github/pguardiario/scrape_table)](https://repl.it/github/pguardiario/scrape_table)
 
 # Scrape Table [Selenium]
 

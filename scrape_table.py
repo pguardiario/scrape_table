@@ -1,4 +1,6 @@
 from selenium import webdriver
+import json
+
 driver = webdriver.Chrome()
 
 driver.get("https://www.coinbase.com/price")
@@ -11,5 +13,6 @@ for js in ["http://code.jquery.com/jquery-1.11.3.min.js", "https://cdn.jsdelivr.
 
 # get that data out painlessly
 data = driver.execute_script("return $('table').tableToJSON()")
+driver.close()
 
-print('x')
+print(json.dumps(data, indent=2))
