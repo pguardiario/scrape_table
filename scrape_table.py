@@ -3,7 +3,7 @@ import json, os, sys
 
 if os.system('pwd') == '/home/runner':
   os.system("sudo apt-get install google-chrome")
-  os.system("chmod +x chromedriver")
+  os.system("chmod +x /home/runner/chromedriver")
   sys.path.append("/home/runner")
 
 driver = webdriver.Chrome()
