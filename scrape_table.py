@@ -1,12 +1,11 @@
 from selenium import webdriver
 import json, os, sys
 
-if os.system('pwd') == '/home/runner':
-  os.system("sudo apt-get install google-chrome")
-  os.system("chmod +x /home/runner/chromedriver")
+if os.popen('pwd').read().strip() == '/home/runner':
+  os.system("chmod +x /home/runner/phantomjs")
   sys.path.append("/home/runner")
 
-driver = webdriver.Chrome()
+driver = webdriver.PhantomJS()
 
 driver.get("https://www.coinbase.com/price")
 
